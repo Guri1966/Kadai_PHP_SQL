@@ -2,6 +2,7 @@
     include './dbConnection.php';
     // この部分を追加
     include './select.php';
+    include './insert.php';
 ?>
 <!doctype html>
 <html lang="ja">
@@ -17,8 +18,9 @@
         <div class="memo_area">
             <div class="memo_form">
                 <h2>メモを追加</h2>
-                <form action="">
-                    <input class="memo_text" type="text" name="" id="">
+                <form action="index.php" method="post">
+                 <!-- nameにbodyを追加     -->
+                    <input class="memo_text" type="text" name="body" id="">
                     <input type="submit" value="追加">
                 </form>
             </div>
