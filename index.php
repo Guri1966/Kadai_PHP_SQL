@@ -3,6 +3,7 @@
     // この部分を追加
     include './select.php';
     include './insert.php';
+    include './delete.php';
 ?>
 <!doctype html>
 <html lang="ja">
@@ -38,7 +39,8 @@
                 </form>
              </div>
              <div class="del_area">
-                 <form action="">
+                 <form action="index.php" method="post">
+                     <input type="hidden" name="delete_id"  value="<?php echo $memo['id'] ?>">
                      <input type="submit" value="削除">
                  </form>
              </div>
