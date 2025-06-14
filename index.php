@@ -2,9 +2,10 @@
     include './dbConnection.php';
     // この部分を追加
     include './select.php';
-    include './insert.php';
+    // include './insert.php';
     include './delete.php';
 ?>
+
 <!doctype html>
 <html lang="ja">
 <head>
@@ -19,11 +20,10 @@
         <div class="memo_area">
             <div class="memo_form">
                 <h2>メモを追加</h2>
-                <form action="index.php" method="post">
-                 <!-- nameにbodyを追加     -->
-                    <input class="memo_text" type="text" name="body" id="">
-                    <input type="submit" value="追加">
-                </form>
+                   <form method="post" action="insert.php">   <!-- index.phpからinsert.phpに変更 -->
+                        <input class="memo_text" type="text" name="body">
+                        <input type="submit" value="追加">
+                   </form>
             </div>
         <div class="memo_show">
         <?php foreach($memo_list as $memo): ?>
@@ -35,7 +35,8 @@
           <div class="btn_area">
              <div class="edit_form">
                 <form action="">
-                     <input type="submit" value="編集">
+                    <input type="hidden" name="edit_id" value=""> 
+                    <input type="submit" value="編集">
                 </form>
              </div>
              <div class="del_area">
