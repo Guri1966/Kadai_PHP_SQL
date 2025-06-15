@@ -24,6 +24,11 @@
                         <input class="memo_text" type="text" name="body">
                         <input type="submit" value="追加">
                    </form>
+                 <h2>メモを検索</h2>
+                   <form method="post" action="">   
+                        <input class="memo_text" type="text" name="body">
+                        <input type="submit" value="検索">
+                   </form>
             </div>
         <div class="memo_show">
         <?php foreach($memo_list as $memo): ?>
