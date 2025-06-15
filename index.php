@@ -34,8 +34,8 @@
           </div>
           <div class="btn_area">
              <div class="edit_form">
-                <form action="">
-                    <input type="hidden" name="edit_id" value=""> 
+                <form action="edit.php" method="post">
+                    <input type="hidden" name="edit_id" value="<?php echo $memo['id'] ?>"> 
                     <input type="submit" value="編集">
                 </form>
              </div>
@@ -47,8 +47,8 @@
              </div>
          </div>
      </div>
-        <?php endforeach; ?>
-        </div>    
+    <?php endforeach; ?>
+    </div>    
     </div>
     </div>
 </body>
