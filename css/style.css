@@ -14,13 +14,13 @@ body{
 }
 
 .memo_form{
+    margin: 20px;
     text-align: center;
     width: 40%;
 }
 
 .memo_form input[type="submit"]{
     border-radius: 5px;
-    border: none;
     padding: 5px 20px;
     background-color: #38B000;
     color: #fefefe;
@@ -29,6 +29,8 @@ body{
 
 .memo_form h2{
     text-align: center;
+    font-size: 25px;
+
 }
 
 .memo_text{
@@ -60,27 +62,31 @@ body{
 }
 
 .memo_title time{
-    font-size: 10px;
+    font-size: 10px; 
 }
 
 .btn_area{
     display: flex;
-    margin: auto;
+    margin: auto ;
 }
 
-.edit_form{
+.edit_form,
+.del_area{
     margin-right: 10px;
 }
 
 .edit_form input,
-.del_area input {
+.del_area input,
+.hold_area input{
     border-radius: 5px;
     padding: 5px 12px;
     border: none;
 }
+
 .memo_form input[type="submit"]:hover,
 .edit_form input:hover,
-.del_area input:hover{
+.del_area input:hover,
+.hold_area input:hover{
     opacity: .8;
 }
 
@@ -95,3 +101,15 @@ body{
     color: #fefefe;
     font-weight: bold;
 }
+
+.hold_area input[type="submit"] {
+    background-color: #d7ee0b;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+
+
+
+
+
